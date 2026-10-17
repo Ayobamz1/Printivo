@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: "DM Serif Display", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.upper-bar {
+    background: #F7F6F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 130px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    width: 1500px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bar-links {
+    display: flex;
+    gap: 50px;
+}
+
+.bar-links a {
+    color: #585e68d7;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;  
+  gap: 40px;
+}
+
+.help {
+  color: #616874c7;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.help a {
+  color: #48aef7;
+  text-decoration: none;
+}
+
+.countries {
+  display: flex;
+  gap: 50px;
+}
+
+.country {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-weight: 600;
+  color: #4a5568;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.navlinks {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navlinks {
+    background-color: #ECE8D9;
+    animation: navbarColor linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0px 100px;
+}
+
+@keyframes navbarColor {
+    0% {
+        background-color: #ECE8D9;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+.navlinks {
+    margin: 0 auto;
+    width: 1500px;
+    background: #ECE8D9;
+    padding: 30px 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.right-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    color: #4a5568d8;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.login a {
+    color: #4a5568d8;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.login .sign {
+    color: #d64357d8;
+}
+
+.hero {
+    margin: 0 auto;
+    width: 1500px;
+    height: 445px;
+    background: #ECE8D9;
+    padding: 30px 130px;
+}
+
+.hero-section .text h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 67px;
+    color: #384a62e5;
+}
+
+.hero-section .text p {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #8E8B97;
+}
+
+form {
+    margin: 50px 0;
+}
+
+form label {
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #4F5E71;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+form input {
+    border: none;
+    margin: 10px 0;
+    padding: 40px 20px;
+    width: 50%;
+}
+
+form input::placeholder {
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    opacity: 0.5;
+}
+input:focus {
+    outline: none;
+}
+
+form span {
+    position: relative;
+    right: 40px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 460px;
+    position: relative;
+    bottom: 300px;
+    left: 910px;
+    margin: auto;
+}
+
+/* HERO-SECTION ENDS  */
+
+/* PRODUCTS */
+.products {
+    width: 1230px;
+    padding: 40px 0;
+    margin: 50px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+.products .texts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.products .texts h2 {
+    color: #384A71;
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.products .texts a {
+    color: #DE9598;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.products-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.products-boxes .boxes {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.products-boxes .boxes .image-container {
+    width: 285px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.products-boxes .boxes .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.products-boxes .boxes .image-container:hover img {
+    transform: scale(1.1);
+}
+
+.products-boxes .boxes .sub {
+    /* width: 24.5%; */
+    border: 1px solid #d4d1d1;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 70px 150px #0000002f;
+}
+
+.boxes .sub h3 {
+    color: #4F5E71;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.boxes .sub p {
+    color: #766F74;
+    font-size: 12.8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.boxes .sub h2 {
+    font-size: 20px;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+.boxes .sub span {
+    color: #766F74;
+    font-size: 12.8px;
+    font-weight: 700;
+}
+
+.boxes .sub a {
+    background: #D77F81;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+
+/* PRODUCTS */
