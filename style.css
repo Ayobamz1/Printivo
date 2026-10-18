@@ -76,38 +76,38 @@ a {
 }
 
 .navlinks {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navlinks {
-    background-color: #ECE8D9;
-    animation: navbarColor linear both;
-    animation-timeline: scroll(root);
-    animation-range: 0px 100px;
-}
-
-@keyframes navbarColor {
-    0% {
-        background-color: #ECE8D9;
-    }
-
-    100% {
-        background-color: white;
-    }
-}
-
-.navlinks {
     margin: 0 auto;
     width: 1500px;
     background: #ECE8D9;
-    padding: 30px 130px;
+    height: 70px;
+    padding: 20px 130px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    animation: navbarColor linear both;
+    animation-timeline: scroll();
+    animation-range: entry 0px exit 150px;
+}
+
+@keyframes navbarColor {
+    /* 0% {
+        background-color: #ECE8D9;
+    }
+
+    100% {
+        background-color: white;
+    } */
+
+    to {
+        background-color: #fff;
+        color: #000;
+    }
 }
 
 .right-nav {
@@ -156,18 +156,19 @@ a {
 .hero-section .text h2 {
     font-family: "DM Serif Display", serif;
     font-size: 67px;
-    color: #384a62e5;
+    color: #384A62;
+    font-weight: 500;
 }
 
 .hero-section .text p {
     font-size: 24px;
     font-weight: 600;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #8E8B97;
+    color: #7d7b85;
 }
 
 form {
-    margin: 50px 0;
+    margin: 40px 0;
 }
 
 form label {
@@ -280,7 +281,7 @@ form span {
     border: 1px solid #d4d1d1;
     padding: 20px;
     background: #fff;
-    box-shadow: 0px 70px 150px #0000002f;
+    box-shadow: 0px 20px 130px #0000002f;
 }
 
 .boxes .sub h3 {
@@ -319,6 +320,110 @@ form span {
     font-weight: 600;
     border-radius: 3px;
 }
-
-
 /* PRODUCTS */
+  
+/* NIGERIA */
+.nigeria {
+    width: 1230px;
+    padding: 40px 0;
+    margin: 50px auto;
+    background: #fff;
+}
+
+.nigeria .text .crown {
+    font-size: 30px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 560;
+    color: #2d4d6d;
+    margin-bottom: 10px;
+    /* word-spacing: 3px; */
+    letter-spacing: 2px;
+}
+
+.nigeria .text .par {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: #757373;
+    margin-bottom: 20px;
+}
+
+.nigeria .image img {
+    width: 100%;
+}
+/* NIGERIA */
+
+/* CUSTOMERS */
+.customer {
+    margin: 0 auto;
+    width: 1500px;
+    background: #EDF6FD;
+    padding: 60px 130px;
+}
+
+.customer .text h2 {
+    color: #384A62;
+    font-size: 30px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.customer .box {
+    background: #fff;
+    padding: 20px 30px;
+    border: 1px solid #c7c5c583;
+    width: 400px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 2px 2px 15px #dddddd96;
+}
+
+
+.customer .box .img {
+    background: #fff;
+    border: 1px solid #bebebe81;
+    border-radius: 50%;
+    width: 30px;
+    height: 27px;
+    padding: 5px;
+    /* object-fit: cover; */
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.customer .box .texts {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.customer .box .texts .head {
+    font-size: 15px;
+    font-weight: 600;
+    color: #566170;
+    margin-bottom: 20px;
+}
+
+.customer .box .texts .head a {
+    color: #57B9F5;
+}
+
+.customer .box .texts .detail {
+    font-size: 16px;
+    font-weight: 400;
+    color: #636b75;
+    margin-bottom: 20px;
+}
+
+.customer .box .texts .detail a {
+    color: #57B9F5;
+
+}
+
+.customer .boxes {
+    display: flex;
+    gap: 30px;
+}
+
+/* CUSTOMERS */
